@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xorshid VPN Plans</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0c0c0c;
+      color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f39c12;
+      padding: 1.5rem;
+      justify-content: center; 
+      align-items: center;
+      display: flex;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .header-image {
+      width: 7rem;   /* Set your desired width */
+      height: 7rem;   /* Set your desired height */
+      object-fit: cover; /* Keeps the image from stretching weirdly */
+    }
+
+    .lang-switch {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .lang-switch button {
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .notice {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #f1c40f;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+    }
+
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background-color: #f39c12;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    td {
+      font-size: 1.05rem;
+    }
+
+    .saving {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: #2c3e50;
+    }
+
+    .telegram {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .telegram a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .telegram a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+    }
+
+    .persian { display: none; direction: rtl; }
+    .english { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="xorshidvpnicon.png" alt="Xorshid VPN Logo" class="header-image">
+    Xorshid VPN – Premium Data
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="switchLang('english')">English</button>
+    <button onclick="switchLang('persian')">فارسی</button>
+  </div>
+
+  <div class="content english">
+    <p>🔥 <strong>Unlimited users</strong> – Share your VPN plan with your whole family!<br>
+    📆 Prices listed <strong>per month</strong> and <strong>per week</strong></p>
+
+    <h2>Monthly Plans</h2>
+    <table>
+      <tr>
+        <th>Data (Monthly)</th>
+        <th>Price</th>
+        <th>Price per GB</th>
+        <th>You Save</th>
+      </tr>
+      <tr>
+        <td>10 GB</td>
+        <td>£1</td>
+        <td>£0.10</td>
+        <td>–</td>
+      </tr>
+      <tr>
+        <td>20 GB</td>
+        <td>£2</td>
+        <td>£0.10</td>
+        <td>–</td>
+      </tr>
+      <tr class="highlight">
+        <td>40 GB</td>
+        <td>£3</td>
+        <td>£0.075</td>
+        <td class="saving">Save 25%</td>
+      </tr>
+      <tr>
+        <td>60 GB</td>
+        <td>£4</td>
+        <td>£0.067</td>
+        <td class="saving">Save 33%</td>
+      </tr>
+      <tr class="highlight">
+        <td>100 GB</td>
+        <td>£5</td>
+        <td>£0.05</td>
+        <td class="saving">Save 50% 🔥</td>
+      </tr>
+    </table>
+
+    <h2 style="margin-top: 3rem;">Weekly Plans</h2>
+    <table>
+      <tr>
+        <th>Data (Weekly)</th>
+        <th>Price</th>
+        <th>Price per GB</th>
+        <th>You Save</th>
+      </tr>
+      <tr>
+        <td>3 GB</td>
+        <td>£0.50</td>
+        <td>£0.167</td>
+        <td>–</td>
+      </tr>
+      <tr>
+        <td>7 GB</td>
+        <td>£1</td>
+        <td>£0.143</td>
+        <td>–</td>
+      </tr>
+      <tr class="highlight">
+        <td>15 GB</td>
+        <td>£1.5</td>
+        <td>£0.10</td>
+        <td class="saving">Save 40%</td>
+      </tr>
+    </table>
+
+    <div class="telegram">
+      <p>To purchase a plan, message us on Telegram:</p>
+      <p><a href="https://t.me/JeremyAsGerms">@JeremyAsGerms</a></p>
+    </div>
+  </div>
+
+  <div class="content persian">
+    <p>🔥 <strong>تعداد کاربر نامحدود</strong> – می‌تونید با کل خانواده به اشتراک بذارید!<br>
+    📆 قیمت‌ها به <strong>صورت ماهانه</strong> و <strong>هفتگی</strong> هستن</p>
+
+    <h2>پلن‌های ماهانه</h2>
+    <table>
+      <tr>
+        <th>حجم (ماهانه)</th>
+        <th>قیمت</th>
+        <th>قیمت هر گیگ</th>
+        <th>صرفه‌جویی</th>
+      </tr>
+      <tr>
+        <td>۱۰ گیگ</td>
+        <td>۳۰,۰۰۰ تومان</td>
+        <td>۳,۰۰۰ تومان</td>
+        <td>–</td>
+      </tr>
+      <tr>
+        <td>۲۰ گیگ</td>
+        <td>۶۰,۰۰۰ تومان</td>
+        <td>۳,۰۰۰ تومان</td>
+        <td>–</td>
+      </tr>
+      <tr class="highlight">
+        <td>۴۰ گیگ</td>
+        <td>۹۰,۰۰۰ تومان</td>
+        <td>۲,۲۵۰ تومان</td>
+        <td class="saving">۲۵٪ سود شما</td>
+      </tr>
+      <tr>
+        <td>۶۰ گیگ</td>
+        <td>۱۲۰,۰۰۰ تومان</td>
+        <td>۲,۰۰۰ تومان</td>
+        <td class="saving">۳۳٪ سود شما</td>
+      </tr>
+      <tr class="highlight">
+        <td>۱۰۰ گیگ</td>
+        <td>۱۵۰,۰۰۰ تومان</td>
+        <td>۱,۵۰۰ تومان</td>
+        <td class="saving">۵۰٪ سود شما 🔥</td>
+      </tr>
+    </table>
+
+    <h2 style="margin-top: 3rem;">پلن‌های هفتگی</h2>
+    <table>
+      <tr>
+        <th>حجم (هفتگی)</th>
+        <th>قیمت</th>
+        <th>قیمت هر گیگ</th>
+        <th>صرفه‌جویی</th>
+      </tr>
+      <tr>
+        <td>۳ گیگ</td>
+        <td>۱۵,۰۰۰ تومان</td>
+        <td>۵,۰۰۰ تومان</td>
+        <td>–</td>
+      </tr>
+      <tr>
+        <td>۷ گیگ</td>
+        <td>۳۰,۰۰۰ تومان</td>
+        <td>۴,۲۸۵ تومان</td>
+        <td>–</td>
+      </tr>
+      <tr class="highlight">
+        <td>۱۵ گیگ</td>
+        <td>۴۵,۰۰۰ تومان</td>
+        <td>۳,۰۰۰ تومان</td>
+        <td class="saving">۴۰٪ سود شما</td>
+      </tr>
+    </table>
+
+    <div class="telegram">
+      <p>برای خرید، در تلگرام پیام بدید:</p>
+      <p><a href="https://t.me/JeremyAsGerms">@JeremyAsGerms</a></p>
+    </div>
+  </div>
+
+  <footer>
+    Xorshid VPN © 2025 – Fast, fair, and family-friendly.
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelector('.english').style.display = lang === 'english' ? 'block' : 'none';
+      document.querySelector('.persian').style.display = lang === 'persian' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
